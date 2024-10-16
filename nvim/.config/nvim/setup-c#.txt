@@ -1,5 +1,4 @@
-- dotnet tool install -g csharp-ls 
-> then add it to env variable
+set up with csharp-ls
+- dotnet tool install -g csharp-ls then add it to env varible
 - install csharp_ls on Mason
-> set up lsp config with csharp_ls
 - install dotnet-runtime, dotnet-sdk, aspnet-runtime

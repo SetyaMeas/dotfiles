@@ -1,19 +1,20 @@
 return {
+	-- {
+	-- 	"neovim/nvim-lspconfig",
+	-- 	opts = {
+	-- 		servers = {
+	-- 			tailwindcss = {},
+	-- 		},
+	-- 	},
+	-- },
 	{
-		"neovim/nvim-lspconfig",
-		opts = {
-			servers = {
-				tailwindcss = {},
-			},
-		},
-	},
-	{
-		"NvChad/nvim-colorizer.lua",
-		opts = {
-			user_default_options = {
-				tailwind = true,
-			},
-		},
+		"brenoprata10/nvim-highlight-colors",
+		config = function()
+			require("nvim-highlight-colors").setup({
+				---@usage 'background'|'foreground'|'virtual'
+				render = "virtual",
+			})
+		end,
 	},
 	{
 		"razak17/tailwind-fold.nvim",
@@ -21,6 +22,6 @@ return {
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
 		ft = { "html", "typescriptreact", "blade", "tsx", "jsx" },
 
-		-- npm i -g tailwindcss-languague-server
 	},
 }
+-- npm i -g tailwindcss-languague-server

@@ -71,7 +71,7 @@ return {
 		},
 	},
 	config = function()
-		require("todo-comments").setup({})
+		require("todo-comments").setup()
 		vim.keymap.set("n", "]t", function()
 			require("todo-comments").jump_next()
 		end, { desc = "Next todo comment" })
@@ -83,7 +83,7 @@ return {
 		vim.keymap.set("n", "<Space>st", ":TodoTelescope<CR>")
 	end,
 
-	-- TODO: go to -> https://github.com/BurntSushi/ripgrep/releases
-	-- TODO: then install ->  ripgrep-14.1.0-i686-pc-windows-msvc.zip
-	-- TODO: set it up, and put its extracted path to environment variable
+	-- go to -> https://github.com/BurntSushi/ripgrep/releases
+	-- then install ->  ripgrep-14.1.0-i686-pc-windows-msvc.zip
+	-- set it up, and put its extracted path to environment variable
 }
