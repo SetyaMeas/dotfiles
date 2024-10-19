@@ -7,4 +7,3 @@ vim.cmd("set tabstop=4")
 vim.cmd("set scrolloff=10")
 vim.cmd("set expandtab")
 vim.cmd("set clipboard+=unnamedplus")
-vim.opt.clipboard = 'unnamedplus'

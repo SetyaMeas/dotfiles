@@ -11,12 +11,6 @@ return {
 		end,
 	},
 	{
-		"Yazeed1s/minimal.nvim",
-		config = function()
-			-- vim.cmd.colorscheme("minimal")
-		end,
-	},
-	{
 		"rose-pine/neovim",
 		config = function()
 			-- require("rose-pine").setup({
