@@ -7,6 +7,9 @@ return {
         vim.fn.sign_define("DiagnosticSignWarn", { text = "", texthl = "DiagnosticSignWarn" })
         vim.fn.sign_define("DiagnosticSignError", { text = "✘", texthl = "DiagnosticSignError" })
 
+        lspconfig.jdtls.setup({
+            capabilities = capabilities,
+        })
         lspconfig.tailwindcss.setup({
             capabilities = capabilities,
         })
